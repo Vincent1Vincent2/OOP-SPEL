@@ -1,4 +1,13 @@
 {
-  "cSpell.ignoreWords": ["Frogger", "Joti", "Leaderboard"],
-  "cSpell.words": ["Entitys"]
+  "cSpell.ignoreWords": [
+    "Frogger",
+    "Joti",
+    "Leaderboard",
+    "froggermenu",
+    "gameboardmusic",
+    "menumusic"
+  ],
+  "cSpell.words": [
+    "Entitys"
+  ]
 }

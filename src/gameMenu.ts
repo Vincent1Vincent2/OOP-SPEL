@@ -3,10 +3,13 @@ class GameMenu implements IMenu {
   private buttonInstructions: Button;
   private buttonLeaderboard: Button;
   private frogImage: p5.Image;
+  private menumusic: p5.SoundFile; // Add a private property for the sound file
   /* private volumeSlider: p5.Element; */
 
   constructor() {
     this.frogImage = loadImage("./assets/images/menuBackground.png");
+    this.menumusic = menumusic.menumusic; // Assign the sound file from skets.ts
+    this.menumusic.loop(); // Start looping the sound
 
     /* Create volume-slider */
     /* this.volumeSlider = createSlider(0, 100, 50);

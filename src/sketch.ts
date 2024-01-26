@@ -4,6 +4,12 @@ let game: Game;
 let music: {
   mystery: p5.SoundFile;
 };
+let menumusic: {
+  menumusic: p5.SoundFile;
+};
+let gameboardmusic: {
+  gameboardmusic: p5.SoundFile;
+};
 let redCarImg: {
   redCar: p5.Image;
 };
@@ -68,6 +74,12 @@ let coin: {
 function preload() {
   music = {
     mystery: loadSound("/assets/music/mystery.mp3"),
+  };
+  menumusic = {
+    menumusic: loadSound("/assets/music/froggermenu.mp3"),
+  };
+  gameboardmusic = {
+    gameboardmusic: loadSound("/assets/music/gameboardmusic.mp3"),
   };
   redCarImg = {
     redCar: loadImage("./assets/images/redCar.png"),
@@ -134,8 +146,8 @@ function preload() {
 function setup() {
   createCanvas(1000, 600);
   frameRate(60);
-  music.mystery.setVolume(0.8);
   game = new Game();
+  menumusic.menumusic.setVolume(0.3);
 }
 
 /**
