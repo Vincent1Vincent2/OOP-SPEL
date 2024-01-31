@@ -73,6 +73,32 @@ let frogLeftImg: {
 let frogBackwardImg: {
   frogBackward: p5.Image;
 };
+let orangeTruckRightImg: {
+  orangeTruckRight: p5.Image;
+};
+let orangeCarRightImg: {
+  orangeCarRight: p5.Image;
+};
+let redCarLeftImg: {
+  redCarLeft: p5.Image;
+};
+let motorcycleLeftImg: {
+  motorcycleLeft: p5.Image;
+};
+let blueCarRightImg: {
+  blueCarRight: p5.Image;
+};
+let turtleRightImg: {
+  turtleRight: p5.Image;
+};
+let snakeRightImg: {
+  snakeRight: p5.Image;
+};
+let logRightImg: {
+  logRight: p5.Image;
+};
+
+
 
 /**
  * Built in preload function in P5
@@ -148,6 +174,30 @@ function preload() {
   };
   frogLeftImg = {
     frogLeft: loadImage("./assets/images/frogLeft.png"),
+  };
+  orangeTruckRightImg = {
+    orangeTruckRight: loadImage("./assets/images/orangeTruckRight.png"),
+  };
+  orangeCarRightImg = {
+    orangeCarRight: loadImage("./assets/images/orangeCarRight.png"),
+  };
+  redCarLeftImg = {
+    redCarLeft: loadImage("./assets/images/redCarLeft.png"),
+  };
+  blueCarRightImg = {
+    blueCarRight: loadImage("./assets/images/blueCarRight.png"),
+  };
+  snakeRightImg = {
+    snakeRight: loadImage("./assets/images/snakeRight.png"),
+  };
+  turtleRightImg = {
+    turtleRight: loadImage("./assets/images/turtleRight.png"),
+  };
+  motorcycleLeftImg = {
+    motorcycleLeft: loadImage("./assets/images/motorcycleLeft.png"),
+  };
+  logRightImg = {
+    logRight: loadImage("./assets/images/logRight.png"),
   };
 }
 

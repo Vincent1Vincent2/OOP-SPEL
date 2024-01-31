@@ -22,22 +22,22 @@ class Level {
       // ---------- Landscape ------------
 
       // -------- Moving things Road ----------
-      new Car(300, 305 + yOffset, lane1Speed, 100, 50),
-      new Car(width, 358 + yOffset, -lane2Speed, 100, 50),
-      new Car(width, 410 + yOffset, -lane1Speed, 100, 50),
+      new Car(300, 305 + yOffset, lane1Speed, 100, 50, redCarImg.redCar),
+      new Car(width, 358 + yOffset, -lane2Speed, 100, 50, blueCarImg.blueCar),
+      new Car(width, 410 + yOffset, -lane1Speed, 100, 50, redCarLeftImg.redCarLeft),
 
-      new Motorcycle(300, 458 + yOffset, lane1Speed, 95, 50),
-      new Truck(300, 508 + yOffset, lane2Speed, 118, 50),
+      new Motorcycle(300, 458 + yOffset, lane1Speed, 95, 50, motorcycleImg.motorcycle),
+      new Truck(300, 508 + yOffset, lane2Speed, 118, 50, orangeTruckRightImg.orangeTruckRight),
       // -------- Moving things Water ----------
-      new Turtle(150, 200 + yOffset, -speed, 50, 50),
-      new Turtle(100, 200 + yOffset, -speed, 50, 50),
-      new Turtle(50, 200 + yOffset, -speed, 50, 50),
-      new Log(100, 150 + yOffset, -lane2Speed, 150, 50),
-      new Turtle(50, 100 + yOffset, lane1Speed, 50, 50),
-      new Turtle(100, 100 + yOffset, lane1Speed, 50, 50),
-      new Turtle(150, 100 + yOffset, lane1Speed, 50, 50),
-      new Log(300, 50 + yOffset, -lane1Speed, 150, 50),
-      new Log(600, 0 + yOffset, lane1Speed, 150, 50),
+      new Turtle(150, 200 + yOffset, -speed, 50, 50, turtleImg.turtle),
+      new Turtle(100, 200 + yOffset, -speed, 50, 50, turtleImg.turtle),
+      new Turtle(50, 200 + yOffset, -speed, 50, 50, turtleImg.turtle),
+      new Log(100, 150 + yOffset, -lane2Speed, 150, 50, logImg.log),
+      new Turtle(50, 100 + yOffset, lane1Speed, 50, 50, turtleRightImg.turtleRight),
+      new Turtle(100, 100 + yOffset, lane1Speed, 50, 50, turtleRightImg.turtleRight),
+      new Turtle(150, 100 + yOffset, lane1Speed, 50, 50, turtleRightImg.turtleRight),
+      new Log(300, 50 + yOffset, -lane1Speed, 150, 50, logImg.log),
+      new Log(600, 0 + yOffset, lane1Speed, 150, 50, logRightImg.logRight),
       // ------------- Coins -------------
       new Coin(150, 305 + yOffset, 40, 40),
     ];
@@ -48,12 +48,12 @@ class Level {
       const xOffset = (i + 1) * random(600, 900); // random avstånd per lane om ni vill..
       this.gameEntities.push(
         ...[
-          new Car(300 - xOffset, 305 + yOffset, lane1Speed, 100, 50),
-          new Car(width + xOffset, 358 + yOffset, -lane2Speed, 100, 50),
-          new Car(width + xOffset, 410 + yOffset, -lane1Speed, 100, 50),
+          new Car(300 - xOffset, 305 + yOffset, lane1Speed, 100, 50, redCarImg.redCar),
+          new Car(width + xOffset, 358 + yOffset, -lane2Speed, 100, 50, blueCarImg.blueCar),
+          new Car(width + xOffset, 410 + yOffset, -lane1Speed, 100, 50, redCarLeftImg.redCarLeft),
 
-          new Motorcycle(300 - xOffset, 458 + yOffset, lane1Speed, 95, 50),
-          new Truck(300 - xOffset, 508 + yOffset, lane2Speed, 118, 50),
+          new Motorcycle(300 - xOffset, 458 + yOffset, lane1Speed, 95, 50, motorcycleImg.motorcycle),
+          new Truck(300 - xOffset, 508 + yOffset, lane2Speed, 118, 50, orangeTruckRightImg.orangeTruckRight),
         ],
       );
     }
